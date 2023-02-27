@@ -5,14 +5,14 @@ import (
 	"os"
 	"time"
 
+	"d3os.io/openpitrix-jobs/pkg/client/clientset/versioned"
+	"d3os.io/openpitrix-jobs/pkg/s3"
+	"d3os.io/openpitrix-jobs/pkg/types"
+	"d3os.io/openpitrix-jobs/pkg/utils"
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/klog/v2"
-	"kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned"
-	"kubesphere.io/openpitrix-jobs/pkg/s3"
-	"kubesphere.io/openpitrix-jobs/pkg/types"
-	"kubesphere.io/openpitrix-jobs/pkg/utils"
 )
 
 var kubeconfig string
@@ -25,7 +25,7 @@ func newRootCmd(out io.Writer, args []string) (*cobra.Command, error) {
 	s3Options = s3.NewS3Options()
 	cmd := &cobra.Command{
 		Use:          "import-app",
-		Short:        "import builtin app into kubesphere",
+		Short:        "import builtin app into d3os",
 		SilenceUsage: true,
 	}
 

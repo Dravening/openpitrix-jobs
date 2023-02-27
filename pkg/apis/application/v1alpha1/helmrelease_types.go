@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@ limitations under the License.
 package v1alpha1
 
 import (
+	"d3os.io/openpitrix-jobs/pkg/constants"
 	"fmt"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"kubesphere.io/openpitrix-jobs/pkg/constants"
 )
 
 const (
@@ -82,9 +82,9 @@ type HelmReleaseStatus struct {
 // +kubebuilder:resource:scope=Cluster,shortName=hrls
 // +kubebuilder:subresource:status
 // +kubebuilder:printcolumn:name="Release Name",type=string,JSONPath=".spec.name"
-// +kubebuilder:printcolumn:name="Workspace",type="string",JSONPath=".metadata.labels.kubesphere\\.io/workspace"
-// +kubebuilder:printcolumn:name="Cluster",type="string",JSONPath=".metadata.labels.kubesphere\\.io/cluster"
-// +kubebuilder:printcolumn:name="Namespace",type="string",JSONPath=".metadata.labels.kubesphere\\.io/namespace"
+// +kubebuilder:printcolumn:name="Workspace",type="string",JSONPath=".metadata.labels.d3os\\.io/workspace"
+// +kubebuilder:printcolumn:name="Cluster",type="string",JSONPath=".metadata.labels.d3os\\.io/cluster"
+// +kubebuilder:printcolumn:name="Namespace",type="string",JSONPath=".metadata.labels.d3os\\.io/namespace"
 // +kubebuilder:printcolumn:name="State",type="string",JSONPath=".status.state"
 // +kubebuilder:printcolumn:name="Age",type="date",JSONPath=".metadata.creationTimestamp"
 // +genclient

@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,13 +21,13 @@ package fake
 import (
 	"context"
 
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 )
 
 // FakeClusters implements ClusterInterface
@@ -35,9 +35,9 @@ type FakeClusters struct {
 	Fake *FakeClusterV1alpha1
 }
 
-var clustersResource = schema.GroupVersionResource{Group: "cluster.kubesphere.io", Version: "v1alpha1", Resource: "clusters"}
+var clustersResource = schema.GroupVersionResource{Group: "cluster.d3os.io", Version: "v1alpha1", Resource: "clusters"}
 
-var clustersKind = schema.GroupVersionKind{Group: "cluster.kubesphere.io", Version: "v1alpha1", Kind: "Cluster"}
+var clustersKind = schema.GroupVersionKind{Group: "cluster.d3os.io", Version: "v1alpha1", Kind: "Cluster"}
 
 // Get takes name of the cluster, and returns the corresponding cluster object, and an error if there is any.
 func (c *FakeClusters) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1alpha1.Cluster, err error) {

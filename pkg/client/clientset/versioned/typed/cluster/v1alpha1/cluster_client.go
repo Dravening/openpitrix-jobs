@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,9 +19,9 @@ limitations under the License.
 package v1alpha1
 
 import (
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
+	"d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
-	"kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/scheme"
 )
 
 type ClusterV1alpha1Interface interface {
@@ -29,7 +29,7 @@ type ClusterV1alpha1Interface interface {
 	ClustersGetter
 }
 
-// ClusterV1alpha1Client is used to interact with features provided by the cluster.kubesphere.io group.
+// ClusterV1alpha1Client is used to interact with features provided by the cluster.d3os.io group.
 type ClusterV1alpha1Client struct {
 	restClient rest.Interface
 }

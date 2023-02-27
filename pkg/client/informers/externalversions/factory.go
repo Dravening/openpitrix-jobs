@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -23,14 +23,14 @@ import (
 	sync "sync"
 	time "time"
 
+	versioned "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned"
+	application "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/application"
+	cluster "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/cluster"
+	internalinterfaces "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
-	versioned "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned"
-	application "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/application"
-	cluster "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/cluster"
-	internalinterfaces "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.

@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,13 +21,13 @@ package fake
 import (
 	"context"
 
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
 )
 
 // FakeHelmApplications implements HelmApplicationInterface
@@ -35,9 +35,9 @@ type FakeHelmApplications struct {
 	Fake *FakeApplicationV1alpha1
 }
 
-var helmapplicationsResource = schema.GroupVersionResource{Group: "application.kubesphere.io", Version: "v1alpha1", Resource: "helmapplications"}
+var helmapplicationsResource = schema.GroupVersionResource{Group: "application.d3os.io", Version: "v1alpha1", Resource: "helmapplications"}
 
-var helmapplicationsKind = schema.GroupVersionKind{Group: "application.kubesphere.io", Version: "v1alpha1", Kind: "HelmApplication"}
+var helmapplicationsKind = schema.GroupVersionKind{Group: "application.d3os.io", Version: "v1alpha1", Kind: "HelmApplication"}
 
 // Get takes name of the helmApplication, and returns the corresponding helmApplication object, and an error if there is any.
 func (c *FakeHelmApplications) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1alpha1.HelmApplication, err error) {

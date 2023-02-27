@@ -2044,50 +2044,50 @@ func (m *ComparePasswordResponse) GetOk() bool {
 }
 
 func init() {
-	proto.RegisterType((*GetVersionRequest)(nil), "kubesphere.GetVersionRequest")
-	proto.RegisterType((*GetVersionResponse)(nil), "kubesphere.GetVersionResponse")
-	proto.RegisterType((*CreateGroupRequest)(nil), "kubesphere.CreateGroupRequest")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.CreateGroupRequest.ExtraEntry")
-	proto.RegisterType((*CreateGroupResponse)(nil), "kubesphere.CreateGroupResponse")
-	proto.RegisterType((*DeleteGroupsRequest)(nil), "kubesphere.DeleteGroupsRequest")
-	proto.RegisterType((*DeleteGroupsResponse)(nil), "kubesphere.DeleteGroupsResponse")
-	proto.RegisterType((*ModifyGroupRequest)(nil), "kubesphere.ModifyGroupRequest")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.ModifyGroupRequest.ExtraEntry")
-	proto.RegisterType((*ModifyGroupResponse)(nil), "kubesphere.ModifyGroupResponse")
-	proto.RegisterType((*Group)(nil), "kubesphere.Group")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.Group.ExtraEntry")
-	proto.RegisterType((*GroupWithUser)(nil), "kubesphere.GroupWithUser")
-	proto.RegisterType((*GetGroupRequest)(nil), "kubesphere.GetGroupRequest")
-	proto.RegisterType((*GetGroupResponse)(nil), "kubesphere.GetGroupResponse")
-	proto.RegisterType((*GetGroupWithUserResponse)(nil), "kubesphere.GetGroupWithUserResponse")
-	proto.RegisterType((*ListGroupsRequest)(nil), "kubesphere.ListGroupsRequest")
-	proto.RegisterType((*ListGroupsResponse)(nil), "kubesphere.ListGroupsResponse")
-	proto.RegisterType((*ListGroupsWithUserResponse)(nil), "kubesphere.ListGroupsWithUserResponse")
-	proto.RegisterType((*CreateUserRequest)(nil), "kubesphere.CreateUserRequest")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.CreateUserRequest.ExtraEntry")
-	proto.RegisterType((*CreateUserResponse)(nil), "kubesphere.CreateUserResponse")
-	proto.RegisterType((*DeleteUsersRequest)(nil), "kubesphere.DeleteUsersRequest")
-	proto.RegisterType((*DeleteUsersResponse)(nil), "kubesphere.DeleteUsersResponse")
-	proto.RegisterType((*ModifyUserRequest)(nil), "kubesphere.ModifyUserRequest")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.ModifyUserRequest.ExtraEntry")
-	proto.RegisterType((*ModifyUserResponse)(nil), "kubesphere.ModifyUserResponse")
-	proto.RegisterType((*User)(nil), "kubesphere.User")
-	proto.RegisterMapType((map[string]string)(nil), "kubesphere.User.ExtraEntry")
-	proto.RegisterType((*UserWithGroup)(nil), "kubesphere.UserWithGroup")
-	proto.RegisterType((*GetUserRequest)(nil), "kubesphere.GetUserRequest")
-	proto.RegisterType((*GetUserResponse)(nil), "kubesphere.GetUserResponse")
-	proto.RegisterType((*GetUserWithGroupResponse)(nil), "kubesphere.GetUserWithGroupResponse")
-	proto.RegisterType((*ListUsersRequest)(nil), "kubesphere.ListUsersRequest")
-	proto.RegisterType((*ListUsersResponse)(nil), "kubesphere.ListUsersResponse")
-	proto.RegisterType((*ListUsersWithGroupResponse)(nil), "kubesphere.ListUsersWithGroupResponse")
-	proto.RegisterType((*JoinGroupRequest)(nil), "kubesphere.JoinGroupRequest")
-	proto.RegisterType((*JoinGroupResponse)(nil), "kubesphere.JoinGroupResponse")
-	proto.RegisterType((*LeaveGroupRequest)(nil), "kubesphere.LeaveGroupRequest")
-	proto.RegisterType((*LeaveGroupResponse)(nil), "kubesphere.LeaveGroupResponse")
-	proto.RegisterType((*ModifyPasswordRequest)(nil), "kubesphere.ModifyPasswordRequest")
-	proto.RegisterType((*ModifyPasswordResponse)(nil), "kubesphere.ModifyPasswordResponse")
-	proto.RegisterType((*ComparePasswordRequest)(nil), "kubesphere.ComparePasswordRequest")
-	proto.RegisterType((*ComparePasswordResponse)(nil), "kubesphere.ComparePasswordResponse")
+	proto.RegisterType((*GetVersionRequest)(nil), "d3os.GetVersionRequest")
+	proto.RegisterType((*GetVersionResponse)(nil), "d3os.GetVersionResponse")
+	proto.RegisterType((*CreateGroupRequest)(nil), "d3os.CreateGroupRequest")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.CreateGroupRequest.ExtraEntry")
+	proto.RegisterType((*CreateGroupResponse)(nil), "d3os.CreateGroupResponse")
+	proto.RegisterType((*DeleteGroupsRequest)(nil), "d3os.DeleteGroupsRequest")
+	proto.RegisterType((*DeleteGroupsResponse)(nil), "d3os.DeleteGroupsResponse")
+	proto.RegisterType((*ModifyGroupRequest)(nil), "d3os.ModifyGroupRequest")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.ModifyGroupRequest.ExtraEntry")
+	proto.RegisterType((*ModifyGroupResponse)(nil), "d3os.ModifyGroupResponse")
+	proto.RegisterType((*Group)(nil), "d3os.Group")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.Group.ExtraEntry")
+	proto.RegisterType((*GroupWithUser)(nil), "d3os.GroupWithUser")
+	proto.RegisterType((*GetGroupRequest)(nil), "d3os.GetGroupRequest")
+	proto.RegisterType((*GetGroupResponse)(nil), "d3os.GetGroupResponse")
+	proto.RegisterType((*GetGroupWithUserResponse)(nil), "d3os.GetGroupWithUserResponse")
+	proto.RegisterType((*ListGroupsRequest)(nil), "d3os.ListGroupsRequest")
+	proto.RegisterType((*ListGroupsResponse)(nil), "d3os.ListGroupsResponse")
+	proto.RegisterType((*ListGroupsWithUserResponse)(nil), "d3os.ListGroupsWithUserResponse")
+	proto.RegisterType((*CreateUserRequest)(nil), "d3os.CreateUserRequest")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.CreateUserRequest.ExtraEntry")
+	proto.RegisterType((*CreateUserResponse)(nil), "d3os.CreateUserResponse")
+	proto.RegisterType((*DeleteUsersRequest)(nil), "d3os.DeleteUsersRequest")
+	proto.RegisterType((*DeleteUsersResponse)(nil), "d3os.DeleteUsersResponse")
+	proto.RegisterType((*ModifyUserRequest)(nil), "d3os.ModifyUserRequest")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.ModifyUserRequest.ExtraEntry")
+	proto.RegisterType((*ModifyUserResponse)(nil), "d3os.ModifyUserResponse")
+	proto.RegisterType((*User)(nil), "d3os.User")
+	proto.RegisterMapType((map[string]string)(nil), "d3os.User.ExtraEntry")
+	proto.RegisterType((*UserWithGroup)(nil), "d3os.UserWithGroup")
+	proto.RegisterType((*GetUserRequest)(nil), "d3os.GetUserRequest")
+	proto.RegisterType((*GetUserResponse)(nil), "d3os.GetUserResponse")
+	proto.RegisterType((*GetUserWithGroupResponse)(nil), "d3os.GetUserWithGroupResponse")
+	proto.RegisterType((*ListUsersRequest)(nil), "d3os.ListUsersRequest")
+	proto.RegisterType((*ListUsersResponse)(nil), "d3os.ListUsersResponse")
+	proto.RegisterType((*ListUsersWithGroupResponse)(nil), "d3os.ListUsersWithGroupResponse")
+	proto.RegisterType((*JoinGroupRequest)(nil), "d3os.JoinGroupRequest")
+	proto.RegisterType((*JoinGroupResponse)(nil), "d3os.JoinGroupResponse")
+	proto.RegisterType((*LeaveGroupRequest)(nil), "d3os.LeaveGroupRequest")
+	proto.RegisterType((*LeaveGroupResponse)(nil), "d3os.LeaveGroupResponse")
+	proto.RegisterType((*ModifyPasswordRequest)(nil), "d3os.ModifyPasswordRequest")
+	proto.RegisterType((*ModifyPasswordResponse)(nil), "d3os.ModifyPasswordResponse")
+	proto.RegisterType((*ComparePasswordRequest)(nil), "d3os.ComparePasswordRequest")
+	proto.RegisterType((*ComparePasswordResponse)(nil), "d3os.ComparePasswordResponse")
 }
 
 func init() { proto.RegisterFile("im.proto", fileDescriptor_36f2114a3e4ddb9e) }
@@ -2231,7 +2231,7 @@ func NewIdentityManagerClient(cc *grpc.ClientConn) IdentityManagerClient {
 
 func (c *identityManagerClient) GetVersion(ctx context.Context, in *GetVersionRequest, opts ...grpc.CallOption) (*GetVersionResponse, error) {
 	out := new(GetVersionResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/GetVersion", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/GetVersion", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2240,7 +2240,7 @@ func (c *identityManagerClient) GetVersion(ctx context.Context, in *GetVersionRe
 
 func (c *identityManagerClient) CreateGroup(ctx context.Context, in *CreateGroupRequest, opts ...grpc.CallOption) (*CreateGroupResponse, error) {
 	out := new(CreateGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/CreateGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/CreateGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2249,7 +2249,7 @@ func (c *identityManagerClient) CreateGroup(ctx context.Context, in *CreateGroup
 
 func (c *identityManagerClient) DeleteGroups(ctx context.Context, in *DeleteGroupsRequest, opts ...grpc.CallOption) (*DeleteGroupsResponse, error) {
 	out := new(DeleteGroupsResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/DeleteGroups", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/DeleteGroups", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2258,7 +2258,7 @@ func (c *identityManagerClient) DeleteGroups(ctx context.Context, in *DeleteGrou
 
 func (c *identityManagerClient) ModifyGroup(ctx context.Context, in *ModifyGroupRequest, opts ...grpc.CallOption) (*ModifyGroupResponse, error) {
 	out := new(ModifyGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ModifyGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ModifyGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2267,7 +2267,7 @@ func (c *identityManagerClient) ModifyGroup(ctx context.Context, in *ModifyGroup
 
 func (c *identityManagerClient) GetGroup(ctx context.Context, in *GetGroupRequest, opts ...grpc.CallOption) (*GetGroupResponse, error) {
 	out := new(GetGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/GetGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/GetGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2276,7 +2276,7 @@ func (c *identityManagerClient) GetGroup(ctx context.Context, in *GetGroupReques
 
 func (c *identityManagerClient) GetGroupWithUser(ctx context.Context, in *GetGroupRequest, opts ...grpc.CallOption) (*GetGroupWithUserResponse, error) {
 	out := new(GetGroupWithUserResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/GetGroupWithUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/GetGroupWithUser", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2285,7 +2285,7 @@ func (c *identityManagerClient) GetGroupWithUser(ctx context.Context, in *GetGro
 
 func (c *identityManagerClient) ListGroups(ctx context.Context, in *ListGroupsRequest, opts ...grpc.CallOption) (*ListGroupsResponse, error) {
 	out := new(ListGroupsResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ListGroups", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ListGroups", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2294,7 +2294,7 @@ func (c *identityManagerClient) ListGroups(ctx context.Context, in *ListGroupsRe
 
 func (c *identityManagerClient) ListGroupsWithUser(ctx context.Context, in *ListGroupsRequest, opts ...grpc.CallOption) (*ListGroupsWithUserResponse, error) {
 	out := new(ListGroupsWithUserResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ListGroupsWithUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ListGroupsWithUser", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2303,7 +2303,7 @@ func (c *identityManagerClient) ListGroupsWithUser(ctx context.Context, in *List
 
 func (c *identityManagerClient) CreateUser(ctx context.Context, in *CreateUserRequest, opts ...grpc.CallOption) (*CreateUserResponse, error) {
 	out := new(CreateUserResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/CreateUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/CreateUser", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2312,7 +2312,7 @@ func (c *identityManagerClient) CreateUser(ctx context.Context, in *CreateUserRe
 
 func (c *identityManagerClient) DeleteUsers(ctx context.Context, in *DeleteUsersRequest, opts ...grpc.CallOption) (*DeleteUsersResponse, error) {
 	out := new(DeleteUsersResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/DeleteUsers", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/DeleteUsers", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2321,7 +2321,7 @@ func (c *identityManagerClient) DeleteUsers(ctx context.Context, in *DeleteUsers
 
 func (c *identityManagerClient) ModifyUser(ctx context.Context, in *ModifyUserRequest, opts ...grpc.CallOption) (*ModifyUserResponse, error) {
 	out := new(ModifyUserResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ModifyUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ModifyUser", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2330,7 +2330,7 @@ func (c *identityManagerClient) ModifyUser(ctx context.Context, in *ModifyUserRe
 
 func (c *identityManagerClient) GetUser(ctx context.Context, in *GetUserRequest, opts ...grpc.CallOption) (*GetUserResponse, error) {
 	out := new(GetUserResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/GetUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/GetUser", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2339,7 +2339,7 @@ func (c *identityManagerClient) GetUser(ctx context.Context, in *GetUserRequest,
 
 func (c *identityManagerClient) GetUserWithGroup(ctx context.Context, in *GetUserRequest, opts ...grpc.CallOption) (*GetUserWithGroupResponse, error) {
 	out := new(GetUserWithGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/GetUserWithGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/GetUserWithGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2348,7 +2348,7 @@ func (c *identityManagerClient) GetUserWithGroup(ctx context.Context, in *GetUse
 
 func (c *identityManagerClient) ListUsers(ctx context.Context, in *ListUsersRequest, opts ...grpc.CallOption) (*ListUsersResponse, error) {
 	out := new(ListUsersResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ListUsers", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ListUsers", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2357,7 +2357,7 @@ func (c *identityManagerClient) ListUsers(ctx context.Context, in *ListUsersRequ
 
 func (c *identityManagerClient) ListUsersWithGroup(ctx context.Context, in *ListUsersRequest, opts ...grpc.CallOption) (*ListUsersWithGroupResponse, error) {
 	out := new(ListUsersWithGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ListUsersWithGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ListUsersWithGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2366,7 +2366,7 @@ func (c *identityManagerClient) ListUsersWithGroup(ctx context.Context, in *List
 
 func (c *identityManagerClient) JoinGroup(ctx context.Context, in *JoinGroupRequest, opts ...grpc.CallOption) (*JoinGroupResponse, error) {
 	out := new(JoinGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/JoinGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/JoinGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2375,7 +2375,7 @@ func (c *identityManagerClient) JoinGroup(ctx context.Context, in *JoinGroupRequ
 
 func (c *identityManagerClient) LeaveGroup(ctx context.Context, in *LeaveGroupRequest, opts ...grpc.CallOption) (*LeaveGroupResponse, error) {
 	out := new(LeaveGroupResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/LeaveGroup", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/LeaveGroup", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2384,7 +2384,7 @@ func (c *identityManagerClient) LeaveGroup(ctx context.Context, in *LeaveGroupRe
 
 func (c *identityManagerClient) ComparePassword(ctx context.Context, in *ComparePasswordRequest, opts ...grpc.CallOption) (*ComparePasswordResponse, error) {
 	out := new(ComparePasswordResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ComparePassword", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ComparePassword", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2393,7 +2393,7 @@ func (c *identityManagerClient) ComparePassword(ctx context.Context, in *Compare
 
 func (c *identityManagerClient) ModifyPassword(ctx context.Context, in *ModifyPasswordRequest, opts ...grpc.CallOption) (*ModifyPasswordResponse, error) {
 	out := new(ModifyPasswordResponse)
-	err := c.cc.Invoke(ctx, "/kubesphere.IdentityManager/ModifyPassword", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/d3os.IdentityManager/ModifyPassword", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2437,7 +2437,7 @@ func _IdentityManager_GetVersion_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/GetVersion",
+		FullMethod: "/d3os.IdentityManager/GetVersion",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).GetVersion(ctx, req.(*GetVersionRequest))
@@ -2455,7 +2455,7 @@ func _IdentityManager_CreateGroup_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/CreateGroup",
+		FullMethod: "/d3os.IdentityManager/CreateGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).CreateGroup(ctx, req.(*CreateGroupRequest))
@@ -2473,7 +2473,7 @@ func _IdentityManager_DeleteGroups_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/DeleteGroups",
+		FullMethod: "/d3os.IdentityManager/DeleteGroups",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).DeleteGroups(ctx, req.(*DeleteGroupsRequest))
@@ -2491,7 +2491,7 @@ func _IdentityManager_ModifyGroup_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ModifyGroup",
+		FullMethod: "/d3os.IdentityManager/ModifyGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ModifyGroup(ctx, req.(*ModifyGroupRequest))
@@ -2509,7 +2509,7 @@ func _IdentityManager_GetGroup_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/GetGroup",
+		FullMethod: "/d3os.IdentityManager/GetGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).GetGroup(ctx, req.(*GetGroupRequest))
@@ -2527,7 +2527,7 @@ func _IdentityManager_GetGroupWithUser_Handler(srv interface{}, ctx context.Cont
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/GetGroupWithUser",
+		FullMethod: "/d3os.IdentityManager/GetGroupWithUser",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).GetGroupWithUser(ctx, req.(*GetGroupRequest))
@@ -2545,7 +2545,7 @@ func _IdentityManager_ListGroups_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ListGroups",
+		FullMethod: "/d3os.IdentityManager/ListGroups",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ListGroups(ctx, req.(*ListGroupsRequest))
@@ -2563,7 +2563,7 @@ func _IdentityManager_ListGroupsWithUser_Handler(srv interface{}, ctx context.Co
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ListGroupsWithUser",
+		FullMethod: "/d3os.IdentityManager/ListGroupsWithUser",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ListGroupsWithUser(ctx, req.(*ListGroupsRequest))
@@ -2581,7 +2581,7 @@ func _IdentityManager_CreateUser_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/CreateUser",
+		FullMethod: "/d3os.IdentityManager/CreateUser",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).CreateUser(ctx, req.(*CreateUserRequest))
@@ -2599,7 +2599,7 @@ func _IdentityManager_DeleteUsers_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/DeleteUsers",
+		FullMethod: "/d3os.IdentityManager/DeleteUsers",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).DeleteUsers(ctx, req.(*DeleteUsersRequest))
@@ -2617,7 +2617,7 @@ func _IdentityManager_ModifyUser_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ModifyUser",
+		FullMethod: "/d3os.IdentityManager/ModifyUser",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ModifyUser(ctx, req.(*ModifyUserRequest))
@@ -2635,7 +2635,7 @@ func _IdentityManager_GetUser_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/GetUser",
+		FullMethod: "/d3os.IdentityManager/GetUser",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).GetUser(ctx, req.(*GetUserRequest))
@@ -2653,7 +2653,7 @@ func _IdentityManager_GetUserWithGroup_Handler(srv interface{}, ctx context.Cont
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/GetUserWithGroup",
+		FullMethod: "/d3os.IdentityManager/GetUserWithGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).GetUserWithGroup(ctx, req.(*GetUserRequest))
@@ -2671,7 +2671,7 @@ func _IdentityManager_ListUsers_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ListUsers",
+		FullMethod: "/d3os.IdentityManager/ListUsers",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ListUsers(ctx, req.(*ListUsersRequest))
@@ -2689,7 +2689,7 @@ func _IdentityManager_ListUsersWithGroup_Handler(srv interface{}, ctx context.Co
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ListUsersWithGroup",
+		FullMethod: "/d3os.IdentityManager/ListUsersWithGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ListUsersWithGroup(ctx, req.(*ListUsersRequest))
@@ -2707,7 +2707,7 @@ func _IdentityManager_JoinGroup_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/JoinGroup",
+		FullMethod: "/d3os.IdentityManager/JoinGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).JoinGroup(ctx, req.(*JoinGroupRequest))
@@ -2725,7 +2725,7 @@ func _IdentityManager_LeaveGroup_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/LeaveGroup",
+		FullMethod: "/d3os.IdentityManager/LeaveGroup",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).LeaveGroup(ctx, req.(*LeaveGroupRequest))
@@ -2743,7 +2743,7 @@ func _IdentityManager_ComparePassword_Handler(srv interface{}, ctx context.Conte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ComparePassword",
+		FullMethod: "/d3os.IdentityManager/ComparePassword",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ComparePassword(ctx, req.(*ComparePasswordRequest))
@@ -2761,7 +2761,7 @@ func _IdentityManager_ModifyPassword_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/kubesphere.IdentityManager/ModifyPassword",
+		FullMethod: "/d3os.IdentityManager/ModifyPassword",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(IdentityManagerServer).ModifyPassword(ctx, req.(*ModifyPasswordRequest))
@@ -2770,7 +2770,7 @@ func _IdentityManager_ModifyPassword_Handler(srv interface{}, ctx context.Contex
 }
 
 var _IdentityManager_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "kubesphere.IdentityManager",
+	ServiceName: "d3os.IdentityManager",
 	HandlerType: (*IdentityManagerServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

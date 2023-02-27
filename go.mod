@@ -1,4 +1,4 @@
-module kubesphere.io/openpitrix-jobs
+module d3os.io/openpitrix-jobs
 
 go 1.18
 

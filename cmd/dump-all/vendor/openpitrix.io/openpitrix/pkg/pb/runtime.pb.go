@@ -367,7 +367,7 @@ type CreateRuntimeRequest struct {
 	RuntimeCredentialId *wrappers.StringValue `protobuf:"bytes,4,opt,name=runtime_credential_id,json=runtimeCredentialId,proto3" json:"runtime_credential_id,omitempty"`
 	// required, runtime zone eg.[pek3a|pek3b|...]
 	Zone *wrappers.StringValue `protobuf:"bytes,5,opt,name=zone,proto3" json:"zone,omitempty"`
-	// for kubesphere only, if provider this value means upsert this record
+	// for d3os only, if provider this value means upsert this record
 	RuntimeId            *wrappers.StringValue `protobuf:"bytes,10,opt,name=runtime_id,json=runtimeId,proto3" json:"runtime_id,omitempty"`
 	XXX_NoUnkeyedLiteral struct{}              `json:"-"`
 	XXX_unrecognized     []byte                `json:"-"`
@@ -925,7 +925,7 @@ type CreateRuntimeCredentialRequest struct {
 	Name *wrappers.StringValue `protobuf:"bytes,4,opt,name=name,proto3" json:"name,omitempty"`
 	// runtime credential description
 	Description *wrappers.StringValue `protobuf:"bytes,5,opt,name=description,proto3" json:"description,omitempty"`
-	// for kubesphere only, if provider this value means upsert this record
+	// for d3os only, if provider this value means upsert this record
 	RuntimeCredentialId  *wrappers.StringValue `protobuf:"bytes,10,opt,name=runtime_credential_id,json=runtimeCredentialId,proto3" json:"runtime_credential_id,omitempty"`
 	XXX_NoUnkeyedLiteral struct{}              `json:"-"`
 	XXX_unrecognized     []byte                `json:"-"`

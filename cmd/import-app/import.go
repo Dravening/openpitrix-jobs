@@ -8,6 +8,11 @@ import (
 	"path"
 	"strings"
 
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	typedv1alpha1 "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1"
+	"d3os.io/openpitrix-jobs/pkg/constants"
+	"d3os.io/openpitrix-jobs/pkg/idutils"
+	"d3os.io/openpitrix-jobs/pkg/s3"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"helm.sh/helm/v3/pkg/chart"
@@ -16,15 +21,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/klog/v2"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
-	typedv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1"
-	"kubesphere.io/openpitrix-jobs/pkg/constants"
-	"kubesphere.io/openpitrix-jobs/pkg/idutils"
-	"kubesphere.io/openpitrix-jobs/pkg/s3"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
-var builtinKey = "application.kubesphere.io/builtin-app"
+var builtinKey = "application.d3os.io/builtin-app"
 var chartDir string
 var (
 	InvalidScheme = errors.New("invalid scheme")
@@ -32,7 +32,7 @@ var (
 
 const (
 	// DefaultConfigurationPath the default location of the configuration file
-	defaultConfigurationPath = "/root/kubesphere"
+	defaultConfigurationPath = "/root/d3os"
 )
 
 func newImportCmd() *cobra.Command {
@@ -452,7 +452,7 @@ func (ic *ImportConfig) ReplaceAppName(chrt *chart.Chart) string {
 	if newName, exists := ic.AppNameReplace[chrt.Name()]; exists {
 		return newName
 	} else {
-		// If app.kubesphere.io/display-name exists in chart's annotation, use this value.
+		// If app.d3os.io/display-name exists in chart's annotation, use this value.
 		if chrt.Metadata.Annotations != nil && chrt.Metadata.Annotations[constants.ChartDisplayName] != "" {
 			return strings.TrimSpace(chrt.Metadata.Annotations[constants.ChartDisplayName])
 		}

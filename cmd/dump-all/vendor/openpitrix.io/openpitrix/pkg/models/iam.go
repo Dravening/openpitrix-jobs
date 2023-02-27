@@ -5,7 +5,7 @@
 package models
 
 import (
-	pbim "kubesphere.io/im/pkg/pb"
+	pbim "d3os.io/im/pkg/pb"
 
 	pbam "openpitrix.io/iam/pkg/pb"
 	"openpitrix.io/openpitrix/pkg/pb"

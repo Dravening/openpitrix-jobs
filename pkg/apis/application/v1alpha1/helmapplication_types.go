@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ limitations under the License.
 package v1alpha1
 
 import (
+	"d3os.io/openpitrix-jobs/pkg/constants"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"kubesphere.io/openpitrix-jobs/pkg/constants"
 	"strings"
 )
 
@@ -58,7 +58,7 @@ type HelmApplicationStatus struct {
 // +kubebuilder:resource:scope=Cluster,shortName=happ
 // +kubebuilder:subresource:status
 // +kubebuilder:printcolumn:name="application name",type=string,JSONPath=`.spec.name`
-// +kubebuilder:printcolumn:name="workspace",type="string",JSONPath=".metadata.labels.kubesphere\\.io/workspace"
+// +kubebuilder:printcolumn:name="workspace",type="string",JSONPath=".metadata.labels.d3os\\.io/workspace"
 // +kubebuilder:printcolumn:name="State",type="string",JSONPath=".status.state"
 // +kubebuilder:printcolumn:name="Age",type="date",JSONPath=".metadata.creationTimestamp"
 // +genclient

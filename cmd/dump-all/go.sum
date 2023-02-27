@@ -647,9 +647,9 @@ k8s.io/metrics v0.0.0-20191016113814-3b1a734dba6e/go.mod h1:ve7/vMWeY5lEBkZf6Bt5
 k8s.io/utils v0.0.0-20190801114015-581e00157fb1/go.mod h1:sZAwmy6armz5eXlNoLmJcl4F1QuKu7sr+mFQ0byX7Ew=
 k8s.io/utils v0.0.0-20191010214722-8d271d903fe4/go.mod h1:sZAwmy6armz5eXlNoLmJcl4F1QuKu7sr+mFQ0byX7Ew=
 k8s.io/utils v0.0.0-20191114184206-e782cd3c129f/go.mod h1:sZAwmy6armz5eXlNoLmJcl4F1QuKu7sr+mFQ0byX7Ew=
-kubesphere.io/im v0.0.0-20190216065048-6ad0bde84b60/go.mod h1:oqKENTyM159J9/yRiJmrefUY5y4LqbK693OtIPaiX8s=
-kubesphere.io/im v0.1.0 h1:Isu/WBOawUb4fzSlQeD1f6Vbq9pqFS0PmDg8v8iFYaY=
-kubesphere.io/im v0.1.0/go.mod h1:DHJj/JngMUFyaXecLjBPXj/zk5Oi7ifIixLRp0qJkyA=
+d3os.io/im v0.0.0-20190216065048-6ad0bde84b60/go.mod h1:oqKENTyM159J9/yRiJmrefUY5y4LqbK693OtIPaiX8s=
+d3os.io/im v0.1.0 h1:Isu/WBOawUb4fzSlQeD1f6Vbq9pqFS0PmDg8v8iFYaY=
+d3os.io/im v0.1.0/go.mod h1:DHJj/JngMUFyaXecLjBPXj/zk5Oi7ifIixLRp0qJkyA=
 modernc.org/cc v1.0.0/go.mod h1:1Sk4//wdnYJiUIxnW8ddKpaOJCF37yAdqYnkxUpaYxw=
 modernc.org/golex v1.0.0/go.mod h1:b/QX9oBD/LhixY6NDh+IdGv17hgB+51fET1i2kPSmvk=
 modernc.org/mathutil v1.0.0/go.mod h1:wU0vUrJsVWBZ4P6e7xtFJEhFSNsfRLJ8H458uRjg03k=

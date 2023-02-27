@@ -5,7 +5,7 @@ metadata:
     app: openpitrix
     component: openpitrix-upgrade-job
   name: openpitrix-upgrade-job
-  namespace: kubesphere-system
+  namespace: d3os-system
 spec:
   template:
     metadata:
@@ -13,7 +13,7 @@ spec:
         app: openpitrix
         component: openpitrix-upgrade-job
     spec:
-      serviceAccountName: kubesphere
+      serviceAccountName: d3os
       restartPolicy: Never
       containers:
         - name: upgrade
@@ -22,9 +22,9 @@ spec:
           image: 139.198.9.238:30002/library/openpitrix-jobs
           imagePullPolicy: Always
           volumeMounts:
-            - mountPath: /etc/kubesphere
-              name: kubesphere-config
+            - mountPath: /etc/d3os
+              name: d3os-config
       volumes:
-        - name: kubesphere-config
+        - name: d3os-config
           configMap:
-            name: kubesphere-config
+            name: d3os-config

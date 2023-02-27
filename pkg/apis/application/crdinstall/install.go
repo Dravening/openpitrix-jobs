@@ -1,5 +1,5 @@
 /*
-Copyright 2020 KubeSphere Authors
+Copyright 2020 D3os Authors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@ limitations under the License.
 package crdinstall
 
 import (
+	"d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
 	k8sruntime "k8s.io/apimachinery/pkg/runtime"
 	urlruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
 )
 
 func Install(scheme *k8sruntime.Scheme) {

@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -57,5 +57,5 @@ const (
 	UncategorizedId                = "ctg-uncategorized"
 	AppStoreRepoId                 = "repo-helm"
 
-	OriginWorkspaceLabelKey = "kubesphere.io/workspace-origin"
+	OriginWorkspaceLabelKey = "d3os.io/workspace-origin"
 )

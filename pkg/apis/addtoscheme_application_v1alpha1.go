@@ -1,5 +1,5 @@
 /*
-Copyright 2019 The KubeSphere Authors.
+Copyright 2019 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ limitations under the License.
 package apis
 
 import (
-	"kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	"d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
 )
 
 func init() {

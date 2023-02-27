@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,16 +19,16 @@ limitations under the License.
 package fake
 
 import (
+	clientset "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned"
+	applicationv1alpha1 "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1"
+	fakeapplicationv1alpha1 "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1/fake"
+	clusterv1alpha1 "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/cluster/v1alpha1"
+	fakeclusterv1alpha1 "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/cluster/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 	"k8s.io/client-go/testing"
-	clientset "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned"
-	applicationv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1"
-	fakeapplicationv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/application/v1alpha1/fake"
-	clusterv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/cluster/v1alpha1"
-	fakeclusterv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/typed/cluster/v1alpha1/fake"
 )
 
 // NewSimpleClientset returns a clientset that will respond with the provided objects.

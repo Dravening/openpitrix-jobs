@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ limitations under the License.
 package fake
 
 import (
+	applicationv1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	clusterv1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	applicationv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
-	clusterv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 )
 
 var scheme = runtime.NewScheme()

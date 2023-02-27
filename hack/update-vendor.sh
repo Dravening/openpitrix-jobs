@@ -123,19 +123,19 @@ function add_generated_comments() {
 
 # Phase 1: ensure go.mod files for staging modules and main module
 for repo in $(kube::util::list_staging_repos); do
-  pushd "staging/src/kubesphere.io/${repo}" >/dev/null 2>&1
+  pushd "staging/src/d3os.io/${repo}" >/dev/null 2>&1
     if [[ ! -f go.mod ]]; then
       kube::log::status "go.mod: initialize ${repo}"
       rm -f Godeps/Godeps.json # remove before initializing, staging Godeps are not authoritative
-      go mod init "kubesphere.io/${repo}"
+      go mod init "d3os.io/${repo}"
       go mod edit -fmt
     fi
   popd >/dev/null 2>&1
 done
 
 if [[ ! -f go.mod ]]; then
-  kube::log::status "go.mod: initialize kubesphere.io/kubesphere"
-  go mod init "kubesphere.io/kubesphere"
+  kube::log::status "go.mod: initialize d3os.io/d3os"
+  go mod init "d3os.io/d3os"
   rm -f Godeps/Godeps.json # remove after initializing
 fi
 
@@ -146,8 +146,8 @@ kube::log::status "go.mod: update references"
 go mod edit -json | jq -r '.Require[]? | select(.Version == "v0.0.0")                 | "-droprequire \(.Path)"'     | xargs -L 100 go mod edit -fmt
 go mod edit -json | jq -r '.Replace[]? | select(.New.Path | startswith("./staging/")) | "-dropreplace \(.Old.Path)"' | xargs -L 100 go mod edit -fmt
 # Readd
-kube::util::list_staging_repos | xargs -n 1 -I {} echo "-require kubesphere.io/{}@v0.0.0"                  | xargs -L 100 go mod edit -fmt
-kube::util::list_staging_repos | xargs -n 1 -I {} echo "-replace kubesphere.io/{}=./staging/src/kubesphere.io/{}" | xargs -L 100 go mod edit -fmt
+kube::util::list_staging_repos | xargs -n 1 -I {} echo "-require d3os.io/{}@v0.0.0"                  | xargs -L 100 go mod edit -fmt
+kube::util::list_staging_repos | xargs -n 1 -I {} echo "-replace d3os.io/{}=./staging/src/d3os.io/{}" | xargs -L 100 go mod edit -fmt
 
 # Phase 3: capture required (minimum) versions from all modules, and replaced (pinned) versions from the root module
 
@@ -187,8 +187,8 @@ mv "${TMP_DIR}/modules.txt.tmp" vendor/modules.txt
 # create a symlink in vendor directory pointing to the staging components.
 # This lets other packages and tools use the local staging components as if they were vendored.
 for repo in $(kube::util::list_staging_repos); do
-  rm -fr "${KUBE_ROOT}/vendor/kubesphere.io/${repo}"
-  ln -s "../../staging/src/kubesphere.io/${repo}" "${KUBE_ROOT}/vendor/kubesphere.io/${repo}"
+  rm -fr "${KUBE_ROOT}/vendor/d3os.io/${repo}"
+  ln -s "../../staging/src/d3os.io/${repo}" "${KUBE_ROOT}/vendor/d3os.io/${repo}"
 done
 
 #kube::log::status "vendor: updating LICENSES file"

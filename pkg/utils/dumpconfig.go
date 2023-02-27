@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-var configPath = "/etc/kubesphere/kubesphere.yaml"
+var configPath = "/etc/d3os/d3os.yaml"
 
 func DumpConfig() {
 	f, err := os.Open(configPath)

@@ -196,8 +196,8 @@ gopkg.in/square/go-jose.v2/json
 gopkg.in/square/go-jose.v2/jwt
 # gopkg.in/yaml.v2 v2.2.8
 gopkg.in/yaml.v2
-# kubesphere.io/im v0.1.0
-kubesphere.io/im/pkg/pb
+# d3os.io/im v0.1.0
+d3os.io/im/pkg/pb
 # openpitrix.io/iam v0.1.0
 openpitrix.io/iam/pkg/pb
 # openpitrix.io/openpitrix v0.4.8 => openpitrix.io/openpitrix v0.4.9-0.20200617102217-10d232395f06

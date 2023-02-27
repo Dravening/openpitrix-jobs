@@ -3,21 +3,21 @@ package types
 import (
 	"bytes"
 	"compress/zlib"
+	"d3os.io/openpitrix-jobs/pkg/s3"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"github.com/spf13/viper"
 	"helm.sh/helm/v3/pkg/repo"
-	"kubesphere.io/openpitrix-jobs/pkg/s3"
 	"time"
 )
 
 const (
 	// DefaultConfigurationName is the default name of configuration
-	defaultConfigurationName = "kubesphere"
+	defaultConfigurationName = "d3os"
 
 	// DefaultConfigurationPath the default location of the configuration file
-	defaultConfigurationPath = "/etc/kubesphere"
+	defaultConfigurationPath = "/etc/d3os"
 )
 
 // Config defines everything needed for apiserver to deal with external services
@@ -90,7 +90,7 @@ type MultiClusterOptions struct {
 //		EnableFederation:              false,
 //		ProxyPublishAddress:           "",
 //		ProxyPublishService:           "",
-//		AgentImage:                    "kubesphere/tower:v1.0",
+//		AgentImage:                    "d3os/tower:v1.0",
 //		ClusterControllerResyncSecond: DefaultResyncPeriod,
 //	}
 //}

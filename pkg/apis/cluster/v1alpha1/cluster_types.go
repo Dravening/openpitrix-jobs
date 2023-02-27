@@ -1,5 +1,5 @@
 /*
-Copyright 2020 KubeSphere Authors
+Copyright 2020 D3os Authors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -27,13 +27,13 @@ const (
 	ResourcesSingularCluster = "cluster"
 	ResourcesPluralCluster   = "clusters"
 
-	HostCluster = "cluster-role.kubesphere.io/host"
+	HostCluster = "cluster-role.d3os.io/host"
 	// Description of which region the cluster been placed
-	ClusterRegion = "cluster.kubesphere.io/region"
+	ClusterRegion = "cluster.d3os.io/region"
 	// Name of the cluster group
-	ClusterGroup = "cluster.kubesphere.io/group"
+	ClusterGroup = "cluster.d3os.io/group"
 
-	Finalizer = "finalizer.cluster.kubesphere.io"
+	Finalizer = "finalizer.cluster.d3os.io"
 )
 
 type ClusterSpec struct {
@@ -65,12 +65,12 @@ type Connection struct {
 
 	// type defines how host cluster will connect to host cluster
 	// ConnectionTypeDirect means direct connection, this requires
-	//   kubeconfig and kubesphere apiserver endpoint provided
-	// ConnectionTypeProxy means using kubesphere proxy, no kubeconfig
-	//   or kubesphere apiserver endpoint required
+	//   kubeconfig and d3os apiserver endpoint provided
+	// ConnectionTypeProxy means using d3os proxy, no kubeconfig
+	//   or d3os apiserver endpoint required
 	Type ConnectionType `json:"type,omitempty"`
 
-	// KubeSphere API Server endpoint. Example: http://10.10.0.11:8080
+	// D3os API Server endpoint. Example: http://10.10.0.11:8080
 	// Should provide this field explicitly if connection type is direct.
 	// Will be populated by ks-apiserver if connection type is proxy.
 	KubeSphereAPIEndpoint string `json:"kubesphereAPIEndpoint,omitempty"`
@@ -97,7 +97,7 @@ type Connection struct {
 	// Only applicable when connection type is proxy.
 	KubernetesAPIServerPort uint16 `json:"kubernetesAPIServerPort,omitempty"`
 
-	// KubeSphereAPIServerPort is the port which listens for forwarding kubesphere apigateway traffic
+	// KubeSphereAPIServerPort is the port which listens for forwarding d3os apigateway traffic
 	// Only applicable when connection type is proxy.
 	KubeSphereAPIServerPort uint16 `json:"kubesphereAPIServerPort,omitempty"`
 }

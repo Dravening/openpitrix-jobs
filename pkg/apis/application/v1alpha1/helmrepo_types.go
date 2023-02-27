@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ limitations under the License.
 package v1alpha1
 
 import (
+	"d3os.io/openpitrix-jobs/pkg/constants"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"kubesphere.io/openpitrix-jobs/pkg/constants"
 )
 
 const (
@@ -92,7 +92,7 @@ type HelmRepoStatus struct {
 // +kubebuilder:resource:scope=Cluster,path=helmrepos,shortName=hrepo
 // +kubebuilder:subresource:status
 // +kubebuilder:printcolumn:name="name",type=string,JSONPath=`.spec.name`
-// +kubebuilder:printcolumn:name="Workspace",type="string",JSONPath=".metadata.labels.kubesphere\\.io/workspace"
+// +kubebuilder:printcolumn:name="Workspace",type="string",JSONPath=".metadata.labels.d3os\\.io/workspace"
 // +kubebuilder:printcolumn:name="url",type=string,JSONPath=`.spec.url`
 // +kubebuilder:printcolumn:name="State",type="string",JSONPath=".status.state"
 // +kubebuilder:printcolumn:name="Age",type="date",JSONPath=".metadata.creationTimestamp"

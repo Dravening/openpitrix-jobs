@@ -1,5 +1,5 @@
 /*
-Copyright 2020 KubeSphere Authors
+Copyright 2020 D3os Authors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ limitations under the License.
 // Package v1alpha1 contains API Schema definitions for the tower v1alpha1 API group
 // +k8s:openapi-gen=true
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=kubesphere.io/api/cluster
+// +k8s:conversion-gen=d3os.io/api/cluster
 // +k8s:defaulter-gen=TypeMeta
-// +groupName=cluster.kubesphere.io
+// +groupName=cluster.d3os.io
 
 package v1alpha1

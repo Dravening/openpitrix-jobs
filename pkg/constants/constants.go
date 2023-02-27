@@ -1,5 +1,5 @@
 /*
-Copyright 2019 The KubeSphere Authors.
+Copyright 2019 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,17 +17,17 @@ limitations under the License.
 package constants
 
 const (
-	CategoryKeyInChart                = "app.kubesphere.io/category"
-	ChartDisplayName                  = "app.kubesphere.io/display-name"
-	ClusterNameLabelKey               = "kubesphere.io/cluster"
-	WorkspaceLabelKey                 = "kubesphere.io/workspace"
-	NamespaceLabelKey                 = "kubesphere.io/namespace"
-	ChartRepoIdLabelKey               = "application.kubesphere.io/repo-id"
-	ChartApplicationIdLabelKey        = "application.kubesphere.io/app-id"
-	ChartApplicationVersionIdLabelKey = "application.kubesphere.io/app-version-id"
-	CategoryIdLabelKey                = "application.kubesphere.io/app-category-id"
-	CreatorAnnotationKey              = "kubesphere.io/creator"
-	KubeSphereNamespace               = "kubesphere-system"
+	CategoryKeyInChart                = "app.d3os.io/category"
+	ChartDisplayName                  = "app.d3os.io/display-name"
+	ClusterNameLabelKey               = "d3os.io/cluster"
+	WorkspaceLabelKey                 = "d3os.io/workspace"
+	NamespaceLabelKey                 = "d3os.io/namespace"
+	ChartRepoIdLabelKey               = "application.d3os.io/repo-id"
+	ChartApplicationIdLabelKey        = "application.d3os.io/app-id"
+	ChartApplicationVersionIdLabelKey = "application.d3os.io/app-version-id"
+	CategoryIdLabelKey                = "application.d3os.io/app-category-id"
+	CreatorAnnotationKey              = "d3os.io/creator"
+	KubeSphereNamespace               = "d3os-system"
 
 	SystemWorkspace = "system-workspace"
 )

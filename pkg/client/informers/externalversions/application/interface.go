@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ limitations under the License.
 package application
 
 import (
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/application/v1alpha1"
-	internalinterfaces "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/application/v1alpha1"
+	internalinterfaces "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

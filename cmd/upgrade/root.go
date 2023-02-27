@@ -1,6 +1,9 @@
 package main
 
 import (
+	"d3os.io/openpitrix-jobs/pkg/s3"
+	"d3os.io/openpitrix-jobs/pkg/types"
+	"d3os.io/openpitrix-jobs/pkg/utils"
 	"fmt"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -8,9 +11,6 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	services3 "github.com/aws/aws-sdk-go/service/s3"
 	"io"
-	"kubesphere.io/openpitrix-jobs/pkg/s3"
-	"kubesphere.io/openpitrix-jobs/pkg/types"
-	"kubesphere.io/openpitrix-jobs/pkg/utils"
 	"os/exec"
 	"strings"
 
@@ -34,7 +34,7 @@ var k8sClient *kubernetes.Clientset
 func newRootCmd(out io.Writer, args []string) (*cobra.Command, error) {
 	cmd := &cobra.Command{
 		Use:   "upgrade",
-		Short: "parse kubesphere-config then start dump-all and convert app",
+		Short: "parse d3os-config then start dump-all and convert app",
 		Run: func(cmd *cobra.Command, args []string) {
 			utils.DumpConfig()
 			config, err := types.TryLoadFromDisk()
@@ -55,7 +55,7 @@ func newRootCmd(out io.Writer, args []string) (*cobra.Command, error) {
 			if config.MySql == nil {
 				klog.Warningf("mysql is empty, use the default config")
 				config.MySql = &types.MySqlOptions{
-					Host:     "mysql.kubesphere-system.svc:3306",
+					Host:     "mysql.d3os-system.svc:3306",
 					Password: "password",
 					Username: "root",
 				}
@@ -71,7 +71,7 @@ func newRootCmd(out io.Writer, args []string) (*cobra.Command, error) {
 				Env: []string{
 					"OPENPITRIX_GRPC_SHOW_ERROR_CAUSE=true",
 					"OPENPITRIX_LOG_LEVEL=debug",
-					"OPENPITRIX_ETCD_ENDPOINTS=etcd.kubesphere-system.svc:2379",
+					"OPENPITRIX_ETCD_ENDPOINTS=etcd.d3os-system.svc:2379",
 					fmt.Sprintf("OPENPITRIX_MYSQL_HOST=%s", hostAndPort[0]),
 					fmt.Sprintf("OPENPITRIX_ATTACHMENT_ENDPOINT=%s", config.OpenPitrixOptions.S3Options.Endpoint),
 					"OPENPITRIX_ATTACHMENT_BUCKET_NAME=openpitrix-attachment",

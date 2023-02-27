@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@ package externalversions
 import (
 	"fmt"
 
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	clusterv1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
-	clusterv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/cluster/v1alpha1"
 )
 
 // GenericInformer is type of SharedIndexInformer which will locate and delegate to other
@@ -53,7 +53,7 @@ func (f *genericInformer) Lister() cache.GenericLister {
 // TODO extend this to unknown resources with a client pool
 func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource) (GenericInformer, error) {
 	switch resource {
-	// Group=application.kubesphere.io, Version=v1alpha1
+	// Group=application.d3os.io, Version=v1alpha1
 	case v1alpha1.SchemeGroupVersion.WithResource("helmapplications"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Application().V1alpha1().HelmApplications().Informer()}, nil
 	case v1alpha1.SchemeGroupVersion.WithResource("helmapplicationversions"):
@@ -65,7 +65,7 @@ func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource
 	case v1alpha1.SchemeGroupVersion.WithResource("helmrepos"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Application().V1alpha1().HelmRepos().Informer()}, nil
 
-		// Group=cluster.kubesphere.io, Version=v1alpha1
+		// Group=cluster.d3os.io, Version=v1alpha1
 	case clusterv1alpha1.SchemeGroupVersion.WithResource("clusters"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Cluster().V1alpha1().Clusters().Informer()}, nil
 

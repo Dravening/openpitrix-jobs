@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,12 +22,12 @@ import (
 	"context"
 	"time"
 
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	scheme "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
-	scheme "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned/scheme"
 )
 
 // HelmCategoriesGetter has a method to return a HelmCategoryInterface.

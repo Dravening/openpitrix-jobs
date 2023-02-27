@@ -5456,7 +5456,7 @@ type ClusterManagerClient interface {
 	CeaseClusters(ctx context.Context, in *CeaseClustersRequest, opts ...grpc.CallOption) (*CeaseClustersResponse, error)
 	// Get statistics of cluster
 	GetClusterStatistics(ctx context.Context, in *GetClusterStatisticsRequest, opts ...grpc.CallOption) (*GetClusterStatisticsResponse, error)
-	// for kubesphere
+	// for d3os
 	DeleteClusterInRuntime(ctx context.Context, in *DeleteClusterInRuntimeRequest, opts ...grpc.CallOption) (*DeleteClusterInRuntimeResponse, error)
 	MigrateClusterInRuntime(ctx context.Context, in *MigrateClusterInRuntimeRequest, opts ...grpc.CallOption) (*MigrateClusterInRuntimeResponse, error)
 }
@@ -5846,7 +5846,7 @@ type ClusterManagerServer interface {
 	CeaseClusters(context.Context, *CeaseClustersRequest) (*CeaseClustersResponse, error)
 	// Get statistics of cluster
 	GetClusterStatistics(context.Context, *GetClusterStatisticsRequest) (*GetClusterStatisticsResponse, error)
-	// for kubesphere
+	// for d3os
 	DeleteClusterInRuntime(context.Context, *DeleteClusterInRuntimeRequest) (*DeleteClusterInRuntimeResponse, error)
 	MigrateClusterInRuntime(context.Context, *MigrateClusterInRuntimeRequest) (*MigrateClusterInRuntimeResponse, error)
 }

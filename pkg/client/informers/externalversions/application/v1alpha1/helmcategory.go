@@ -1,5 +1,5 @@
 /*
-Copyright 2020 The KubeSphere Authors.
+Copyright 2020 The D3os Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,14 +22,14 @@ import (
 	"context"
 	time "time"
 
+	applicationv1alpha1 "d3os.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
+	versioned "d3os.io/openpitrix-jobs/pkg/client/clientset/versioned"
+	internalinterfaces "d3os.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "d3os.io/openpitrix-jobs/pkg/client/listers/application/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	applicationv1alpha1 "kubesphere.io/openpitrix-jobs/pkg/apis/application/v1alpha1"
-	versioned "kubesphere.io/openpitrix-jobs/pkg/client/clientset/versioned"
-	internalinterfaces "kubesphere.io/openpitrix-jobs/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "kubesphere.io/openpitrix-jobs/pkg/client/listers/application/v1alpha1"
 )
 
 // HelmCategoryInformer provides access to a shared informer and lister for
