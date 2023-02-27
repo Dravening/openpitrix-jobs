@@ -1,4 +1,5 @@
 FROM golang:1.18.2-alpine as builder
+RUN sed -i 's!http://dl-cdn.alpinelinux.org/!https://mirrors.ustc.edu.cn/!g' /etc/apk/repositories
 
 RUN apk add --no-cache git curl openssl
 
@@ -12,6 +13,7 @@ RUN CGO_ENABLED=0 GOBIN=/release_bin go install -mod=vendor -ldflags '-w -s'  d3
 #RUN CGO_ENABLED=0 GOBIN=/release_bin go install -mod=vendor -ldflags '-w -s'  d3os.io/openpitrix-jobs/cmd/upgrade/...
 
 FROM alpine:3.16.0
+RUN sed -i 's!http://dl-cdn.alpinelinux.org/!https://mirrors.ustc.edu.cn/!g' /etc/apk/repositories
 
 WORKDIR /root
 COPY import-config.yaml d3os/
